@@ -15,28 +15,18 @@
 
 package com.google.samples.motionlayoutcodelab
 
-import android.app.Activity
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import android.view.View
+import com.google.android.material.snackbar.Snackbar
+import androidx.appcompat.app.AppCompatActivity;
 
-class MainActivity : AppCompatActivity() {
+import kotlinx.android.synthetic.main.activity_step1.*
+
+class Step3Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        setupClicks()
+        setContentView(R.layout.activity_step2)
     }
 
-    private fun setupClicks() {
-        findViewById<Button>(R.id.step1).setOnClickListener { navigateTo<Step1Activity>() }
-        findViewById<Button>(R.id.step2).setOnClickListener { navigateTo<Step2Activity>() }
-    }
-
-    private inline fun <reified Destination: Activity> navigateTo() {
-        val intent = Intent(this, Destination::class.java)
-        startActivity(intent)
-    }
 }

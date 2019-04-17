@@ -21,71 +21,16 @@
     <Transition
             app:constraintSetStart="@+id/start"
             app:constraintSetEnd="@+id/end">
-        <!-- MotionLayout will track swipes relative to this view -->
-        <OnSwipe
-                app:touchAnchorId="@id/red_star"
-                app:maxAcceleration="0.1"
-                app:maxVelocity="0.1"
-        />
+        <!-- TODO add OnSwipe tag -->
     </Transition>
 
     <!-- Constraints to apply at the start of the animation -->
     <ConstraintSet android:id="@+id/start">
-        <Constraint
-                android:id="@+id/red_star"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
-
-        <Constraint
-                android:id="@+id/left_star"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:alpha="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
-
-        <Constraint
-                android:id="@+id/right_star"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:alpha="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
+        <!-- TODO apply starting constraints -->
     </ConstraintSet>
 
     <!-- Constraints to apply at the end of the animation -->
     <ConstraintSet android:id="@+id/end">
-
-        <Constraint
-                android:id="@+id/left_star"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:alpha="1.0"
-                app:layout_constraintHorizontal_chainStyle="packed"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/red_star"
-                app:layout_constraintTop_toBottomOf="@id/credits" />
-
-        <Constraint
-                android:id="@+id/red_star"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintStart_toEndOf="@id/left_star"
-                app:layout_constraintEnd_toStartOf="@id/right_star"
-                app:layout_constraintTop_toBottomOf="@id/credits" />
-
-        <Constraint
-                android:id="@+id/right_star"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:alpha="1.0"
-                app:layout_constraintStart_toEndOf="@id/red_star"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/credits" />
+        <!-- TODO apply ending constraints -->
     </ConstraintSet>
 </MotionScene>

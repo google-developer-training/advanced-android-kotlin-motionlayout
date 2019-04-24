@@ -20,5 +20,17 @@
     <string name="step_1_animations_with_motion_layout">Step 1: Animations with Motion Layout</string>
     <string name="star">Star</string>
     <string name="step_2_animating_based_on_drag_events">Step 2: Animating based on drag events</string>
-    <string name="milky_way_credits">Mark Striebeck @ Google</string>
+    <string name="mark_credits">Mark S. @ Google</string>
+    <string name="arvind_credits">Arvind H @ Google</string>
+    <string name="title_activity_step3">Modifying a path</string>
+    <string name="step_3_modifying_animations">Step 3: Modifying a path</string>
+    <string name="pinwheel_galaxy">Pinwheel galaxy</string>
+    <string name="title_activity_step4">Building complex paths</string>
+    <string name="step_4_building_complex_paths">Step 4: Building complex paths</string>
+    <string name="step_5_changing_attributes_during_motion">Step 5: Changing attributes during motion</string>
+    <string name="title_activity_step5">Changing attributes during motion</string>
+    <string name="title_activity_step6">Changing custom attributes</string>
+    <string name="step_6_changing_custom_attributes">Step 6: Changing custom attributes</string>
+    <string name="step_7_onswipe_with_complex_paths">Step 7: OnSwipe with complex paths</string>
+    <string name="title_activity_step7">OnSwipe with complex paths</string>
 </resources>

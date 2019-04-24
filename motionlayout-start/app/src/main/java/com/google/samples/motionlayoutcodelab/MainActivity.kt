@@ -33,6 +33,11 @@ class MainActivity : AppCompatActivity() {
     private fun setupClicks() {
         findViewById<Button>(R.id.step1).setOnClickListener { navigateTo<Step1Activity>() }
         findViewById<Button>(R.id.step2).setOnClickListener { navigateTo<Step2Activity>() }
+        findViewById<Button>(R.id.step3).setOnClickListener { navigateTo<Step3Activity>() }
+        findViewById<Button>(R.id.step4).setOnClickListener { navigateTo<Step4Activity>() }
+        findViewById<Button>(R.id.step5).setOnClickListener { navigateTo<Step5Activity>() }
+        findViewById<Button>(R.id.step6).setOnClickListener { navigateTo<Step6Activity>() }
+        findViewById<Button>(R.id.step7).setOnClickListener { navigateTo<Step7Activity>() }
     }
 
     private inline fun <reified Destination: Activity> navigateTo() {

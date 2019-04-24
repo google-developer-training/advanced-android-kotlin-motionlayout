@@ -17,46 +17,25 @@
 <androidx.constraintlayout.motion.widget.MotionLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:background="@drawable/milky_way"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layoutDescription="@xml/step2" >
+        android:background="@drawable/m_eightyone"
+        app:layoutDescription="@xml/step5"
+        app:motionDebug="SHOW_PATH" >
 
     <ImageView
-            android:id="@+id/left_star"
+            android:id="@+id/moon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_star_outline"
+            app:srcCompat="@drawable/ic_moon"
             android:tint="?colorOnPrimary"
-            android:contentDescription="@string/star"
-    />
-
-    <ImageView
-            android:id="@+id/right_star"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_star_outline"
-            android:tint="?colorOnPrimary"
-            android:contentDescription="@string/star"
-    />
-
-    <ImageView
-            android:id="@+id/red_star"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_star_outline"
-            android:tint="?colorSecondary"
-            android:contentDescription="@string/star"
     />
 
     <TextView
             android:id="@+id/credits"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="?colorOnPrimary"
-            android:text="@string/mark_credits"
-            android:padding="16dp"
-            android:alpha="0.8"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            android:text="@string/arvind_credits"
+            android:textSize="24sp"
+            android:textColor="?colorOnPrimary" />
 </androidx.constraintlayout.motion.widget.MotionLayout>

@@ -38,5 +38,37 @@
                 android:text="@string/step_2_animating_based_on_drag_events"
         />
 
+        <Button
+                android:id="@+id/step3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/step_3_modifying_animations"
+        />
+        <Button
+                android:id="@+id/step4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/step_4_building_complex_paths"
+        />
+               <Button
+                android:id="@+id/step5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/step_5_changing_attributes_during_motion"
+        />
+        <Button
+                android:id="@+id/step6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/step_6_changing_custom_attributes"
+        />
+        <Button
+                android:id="@+id/step7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/step_7_onswipe_with_complex_paths"
+        />
+
+
     </LinearLayout>
 </ScrollView>

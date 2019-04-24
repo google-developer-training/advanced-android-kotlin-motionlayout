@@ -14,7 +14,7 @@
   ~   limitations under the License.
   -->
 
-<!-- Describe the animation for activity_step1.xml -->
+<!-- Describe the animation for activity_step2.xml -->
 <MotionScene xmlns:app="http://schemas.android.com/apk/res-auto"
              xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- A transition describes an animation via start and end state -->

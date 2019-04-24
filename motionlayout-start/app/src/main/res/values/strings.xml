@@ -17,20 +17,26 @@
     <string name="app_name">Motion Layout codelab</string>
     <string name="title_activity_step1">Animations with Motion Layout</string>
     <string name="title_activity_step2">Animating with drag events</string>
-    <string name="step_1_animations_with_motion_layout">Step 1: Animations with Motion Layout</string>
     <string name="star">Star</string>
-    <string name="step_2_animating_based_on_drag_events">Step 2: Animating based on drag events</string>
     <string name="mark_credits">Mark S. @ Google</string>
     <string name="arvind_credits">Arvind H @ Google</string>
     <string name="title_activity_step3">Modifying a path</string>
     <string name="step_3_modifying_animations">Step 3: Modifying a path</string>
     <string name="pinwheel_galaxy">Pinwheel galaxy</string>
     <string name="title_activity_step4">Building complex paths</string>
-    <string name="step_4_building_complex_paths">Step 4: Building complex paths</string>
-    <string name="step_5_changing_attributes_during_motion">Step 5: Changing attributes during motion</string>
     <string name="title_activity_step5">Changing attributes during motion</string>
     <string name="title_activity_step6">Changing custom attributes</string>
-    <string name="step_6_changing_custom_attributes">Step 6: Changing custom attributes</string>
-    <string name="step_7_onswipe_with_complex_paths">Step 7: OnSwipe with complex paths</string>
     <string name="title_activity_step7">OnSwipe with complex paths</string>
+    <string name="swipe_towards_the_right">Swipe towards the right</string>
+    <string name="long_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a. Est placerat in egestas erat imperdiet sed. Ut lectus arcu bibendum at varius. Purus in mollis nunc sed id semper risus in hendrerit. Volutpat est velit egestas dui. Id diam vel quam elementum pulvinar etiam non. Tristique magna sit amet purus gravida quis blandit. Gravida in fermentum et sollicitudin ac orci. Sed augue lacus viverra vitae congue eu. Sapien nec sagittis aliquam malesuada bibendum. Tortor aliquam nulla facilisi cras fermentum odio. Egestas sed tempus urna et pharetra pharetra massa. Amet purus gravida quis blandit. Orci a scelerisque purus semper eget duis at tellus.
+
+    Volutpat lacus laoreet non curabitur. Urna cursus eget nunc scelerisque viverra mauris. Turpis massa sed elementum tempus egestas sed sed risus pretium. Quam nulla porttitor massa id neque aliquam. Tempus quam pellentesque nec nam aliquam sem et. Ut eu sem integer vitae justo. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Cras fermentum odio eu feugiat pretium nibh ipsum. Posuere morbi leo urna molestie at elementum eu facilisis sed. Augue eget arcu dictum varius duis at. Lacinia at quis risus sed vulputate odio. Massa tincidunt dui ut ornare.
+
+    Auctor augue mauris augue neque gravida in fermentum et. Varius vel pharetra vel turpis nunc eget. Condimentum mattis pellentesque id nibh tortor id aliquet. In massa tempor nec feugiat nisl pretium fusce. Dolor sed viverra ipsum nunc aliquet bibendum. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Mauris a diam maecenas sed. Tortor aliquam nulla facilisi cras fermentum. Mattis rhoncus urna neque viverra. Dui sapien eget mi proin sed. In dictum non consectetur a. Eu consequat ac felis donec et odio pellentesque. Eget egestas purus viverra accumsan in nisl. Dui nunc mattis enim ut tellus elementum. Lobortis elementum nibh tellus molestie nunc non. Nisi porta lorem mollis aliquam ut porttitor leo a diam. Pulvinar mattis nunc sed blandit libero volutpat sed. Ut faucibus pulvinar elementum integer.
+
+    Scelerisque varius morbi enim nunc faucibus a pellentesque. Scelerisque in dictum non consectetur a erat nam at lectus. Sed euismod nisi porta lorem mollis aliquam. Nunc mi ipsum faucibus vitae aliquet. Nibh cras pulvinar mattis nunc. Sed viverra tellus in hac habitasse platea. Ac tortor vitae purus faucibus ornare. Laoreet sit amet cursus sit amet dictum sit amet. Risus sed vulputate odio ut enim. Massa sapien faucibus et molestie ac feugiat sed. Proin libero nunc consequat interdum varius sit amet mattis vulputate. Eget sit amet tellus cras adipiscing enim eu. Ullamcorper dignissim cras tincidunt lobortis feugiat. Arcu ac tortor dignissim convallis aenean et tortor at. Aliquet risus feugiat in ante metus. Sit amet luctus venenatis lectus magna. Egestas maecenas pharetra convallis posuere morbi leo. Auctor neque vitae tempus quam pellentesque nec nam aliquam sem.
+
+        Ac orci phasellus egestas tellus rutrum tellus. Ultrices neque ornare aenean euismod elementum nisi quis. Vel pharetra vel turpis nunc eget. Quis lectus nulla at volutpat diam ut venenatis tellus in. Egestas congue quisque egestas diam in arcu. Tincidunt praesent semper feugiat nibh sed pulvinar. Tristique senectus et netus et malesuada fames. Tristique nulla aliquet enim tortor. Aliquet nibh praesent tristique magna sit amet purus. Diam maecenas ultricies mi eget mauris pharetra et ultrices neque. Morbi tristique senectus et netus et malesuada. Venenatis tellus in metus vulputate eu scelerisque felis. Risus pretium quam vulputate dignissim suspendisse in. Ut venenatis tellus in metus vulputate. Turpis in eu mi bibendum. Pellentesque elit eget gravida cum sociis natoque. Tristique risus nec feugiat in fermentum posuere urna. Senectus et netus et malesuada fames ac turpis.</string>
+    <string name="title_activity_step7_completed">Complex motion with KeyFrames</string>
+    <string name="title_activity_step8">Running motion with code</string>
 </resources>

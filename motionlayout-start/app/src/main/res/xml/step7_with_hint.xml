@@ -23,9 +23,11 @@
             app:constraintSetStart="@+id/start"
             app:constraintSetEnd="@+id/end"
             app:duration="3000">
-        <OnClick
-                app:targetId="@id/moon"
-                app:clickAction="toggle"
+
+        <OnSwipe
+                app:touchAnchorId="@id/moon"
+                app:touchAnchorSide="bottom"
+                app:dragDirection="dragRight"
         />
 
         <KeyFrameSet>
@@ -60,13 +62,42 @@
                     android:rotation="-720"
             />
             <KeyAttribute
+                    app:framePosition="0"
+                    app:motionTarget="@id/moon">
+                <CustomAttribute
+                        app:attributeName="colorFilter"
+                        app:customColorValue="#FFFFFF"
+                />
+            </KeyAttribute>
+            <KeyAttribute
+                    app:framePosition="50"
+                    app:motionTarget="@id/moon">
+                <CustomAttribute
+                    app:attributeName="colorFilter"
+                    app:customColorValue="#FFB612"
+                />
+            </KeyAttribute>
+            <KeyAttribute
+                    app:framePosition="100"
+                    app:motionTarget="@id/moon">
+                <CustomAttribute
+                        app:attributeName="colorFilter"
+                        app:customColorValue="#FFFFFF"
+                />
+            </KeyAttribute>
+            <KeyAttribute
                     app:framePosition="85"
                     app:motionTarget="@id/credits"
                     android:alpha="0.0"
             />
 
-            <!-- TODO Add Custom attributes here -->
-
+            <!-- Added a hint that flies out and fades after the user swipes to the right -->
+            <KeyAttribute
+                app:motionTarget="@id/swipe_hint"
+                app:framePosition="40"
+                android:alpha="0"
+                app:transitionEasing="accelerate"
+            />
         </KeyFrameSet>
     </Transition>
 
@@ -90,6 +121,16 @@
             app:layout_constraintBottom_toBottomOf="@id/moon"
             app:layout_constraintTop_toTopOf="@id/moon"
             />
+        <!-- Added a hint that flies out and fades after the user swipes to the right -->
+        <Constraint
+            android:id="@id/swipe_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </ConstraintSet>
 
     <!-- Constraints to apply at the end of the animation -->
@@ -111,5 +152,14 @@
                 app:layout_constraintBottom_toBottomOf="@id/moon"
                 app:layout_constraintTop_toTopOf="@id/moon"
         />
+        <!-- Added a hint that flies out and fades after the user swipes to the right -->
+        <Constraint
+                android:id="@id/swipe_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="parent" />
     </ConstraintSet>
 </MotionScene>

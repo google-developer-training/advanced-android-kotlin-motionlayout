@@ -27,7 +27,7 @@ class Step8CompletedActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_step8)
+        setContentView(R.layout.activity_step8_completed)
 
         coordinateMotion()
     }

@@ -18,8 +18,7 @@
     <string name="title_activity_step1">Animations with Motion Layout</string>
     <string name="title_activity_step2">Animating with drag events</string>
     <string name="star">Star</string>
-    <string name="mark_credits">Mark S. @ Google</string>
-    <string name="arvind_credits">Arvind H @ Google</string>
+    <string name="credits">Virginia P @ Google</string>
     <string name="title_activity_step3">Modifying a path</string>
     <string name="step_3_modifying_animations">Step 3: Modifying a path</string>
     <string name="pinwheel_galaxy">Pinwheel galaxy</string>

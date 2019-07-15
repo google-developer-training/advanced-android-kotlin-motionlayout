@@ -29,9 +29,22 @@
                 android:layout_height="match_parent"
                 android:minHeight="80dp"
                 app:layout_scrollFlags="scroll|enterAlways|snap|exitUntilCollapsed"
-                android:background="@drawable/m_eightyone"
                 app:layoutDescription="@xml/step8"
                 app:motionDebug="SHOW_PATH" >
+
+
+            <ImageView
+                    android:id="@+id/background"
+                    android:layout_width="0dp"
+                    android:layout_height="600dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/background"
+                    android:scaleType="centerCrop"
+            />
+
 
             <ImageView
                     android:id="@+id/moon"
@@ -45,7 +58,7 @@
                     android:id="@+id/credits"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/arvind_credits"
+                    android:text="@string/credits"
                     android:textSize="24sp"
                     android:textColor="?colorOnPrimary" />
         </androidx.constraintlayout.motion.widget.MotionLayout>

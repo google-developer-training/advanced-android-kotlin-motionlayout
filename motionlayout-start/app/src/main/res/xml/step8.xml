@@ -54,6 +54,10 @@
                     app:motionTarget="@id/credits"
                     android:alpha="0.0"
             />
+            <KeyAttribute
+                app:framePosition="100"
+                app:motionTarget="@id/background"
+                android:translationY="300dp" />
         </KeyFrameSet>
     </Transition>
 

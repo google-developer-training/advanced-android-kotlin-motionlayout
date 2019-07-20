@@ -30,11 +30,10 @@
                 app:layoutDescription="@xml/step8"
                 app:motionDebug="SHOW_PATH" >
 
-
             <ImageView
                     android:id="@+id/background"
                     android:layout_width="0dp"
-                    android:layout_height="0dp"
+                    android:layout_height="1000dp"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~   Copyright (C) 2019 The Android Open Source Project
   ~   Licensed under the Apache License, Version 2.0 (the "License");
   ~   you may not use this file except in compliance with the License.
@@ -14,40 +13,38 @@
   ~   limitations under the License.
   -->
 
-<androidx.constraintlayout.motion.widget.MotionLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layoutDescription="@xml/step5"
-        app:motionDebug="SHOW_PATH" >
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/step5"
+    app:motionDebug="SHOW_PATH">
 
 
     <ImageView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/background"
-            android:scaleType="centerCrop"
-    />
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/background"
+        android:scaleType="centerCrop" />
 
 
     <ImageView
-            android:id="@+id/moon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_moon"
-            android:tint="?colorOnPrimary"
-    />
+        android:id="@+id/moon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_moon"
+        android:tint="?colorOnPrimary" />
 
     <TextView
-            android:id="@+id/credits"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/credits"
-            android:textSize="24sp"
-            android:textColor="?colorOnPrimary" />
+        android:id="@+id/credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/credits"
+        android:textSize="24sp"
+        android:textColor="?colorOnPrimary" />
 </androidx.constraintlayout.motion.widget.MotionLayout>

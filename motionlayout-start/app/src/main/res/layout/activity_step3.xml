@@ -15,6 +15,7 @@
 
 <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layoutDescription="@xml/step3">
@@ -29,14 +30,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/background"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/moon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_moon"
-        android:tint="?colorOnPrimary" />
+        app:tint="?colorOnPrimary"
+        android:contentDescription="@string/moon" />
 
     <TextView
         android:id="@+id/credits"

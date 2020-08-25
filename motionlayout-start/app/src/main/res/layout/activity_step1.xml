@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_star_outline"
-        android:tint="?colorSecondary"
+        app:tint="?colorSecondary"
         android:contentDescription="@string/star"
         android:layout_margin="30dp" />
 

@@ -15,6 +15,7 @@
 
 <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layoutDescription="@xml/step2">
@@ -28,7 +29,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/background"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription" />
 
 
     <ImageView
@@ -36,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_star_outline"
-        android:tint="?colorOnPrimary"
+        app:tint="?colorOnPrimary"
         android:contentDescription="@string/star" />
 
     <ImageView
@@ -44,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_star_outline"
-        android:tint="?colorOnPrimary"
+        app:tint="?colorOnPrimary"
         android:contentDescription="@string/star" />
 
     <ImageView
@@ -52,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_star_outline"
-        android:tint="?colorSecondary"
+        app:tint="?colorSecondary"
         android:contentDescription="@string/star" />
 
     <TextView

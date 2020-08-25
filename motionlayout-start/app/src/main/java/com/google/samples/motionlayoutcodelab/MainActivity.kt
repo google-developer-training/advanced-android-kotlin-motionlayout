@@ -16,11 +16,15 @@
 package com.google.samples.motionlayoutcodelab
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
+import android.content.res.Resources
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.annotation.ColorRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
@@ -129,12 +133,21 @@ class MainViewHolder(val cardView: CardView) : RecyclerView.ViewHolder(cardView)
             context.startActivity(intent)
         }
         val color = if (step.highlight) {
-            context.resources.getColor(R.color.secondaryLightColor)
+            getColor(R.color.secondaryLightColor, itemView.context)
         } else {
-            context.resources.getColor(R.color.primaryTextColor)
+            getColor(R.color.primaryTextColor, itemView.context)
         }
         header.setTextColor(color)
         description.setTextColor(color)
+    }
+
+    fun getColor(@ColorRes colorResId: Int, context: Context): Int {
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            context.resources.getColor(colorResId, context.theme)
+        } else {
+            @Suppress("DEPRECATION")
+            context.resources.getColor(colorResId)
+        }
     }
 
 }

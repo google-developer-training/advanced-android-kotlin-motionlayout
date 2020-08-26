@@ -15,80 +15,80 @@
   -->
 
 <!-- Describe the animation for activity_step3.xml -->
-<MotionScene xmlns:app="http://schemas.android.com/apk/res-auto"
+<MotionScene xmlns:motion="http://schemas.android.com/apk/res-auto"
              xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- A transition describes an animation via start and end state -->
     <Transition
             
-            app:constraintSetStart="@+id/start"
-            app:constraintSetEnd="@+id/end"
-            app:duration="3000">
+            motion:constraintSetStart="@+id/start"
+            motion:constraintSetEnd="@+id/end"
+            motion:duration="3000">
 
         <!-- Fix OnSwipe by changing touchAnchorSide -->
         <OnSwipe
-                app:touchAnchorId="@id/moon"
-                app:touchAnchorSide="bottom"
+                motion:touchAnchorId="@id/moon"
+                motion:touchAnchorSide="bottom"
         />
 
 
         <KeyFrameSet>
             <KeyPosition
-                    app:framePosition="25"
-                    app:motionTarget="@id/moon"
-                    app:keyPositionType="parentRelative"
-                    app:percentY="0.6"
+                    motion:framePosition="25"
+                    motion:motionTarget="@id/moon"
+                    motion:keyPositionType="parentRelative"
+                    motion:percentY="0.6"
             />
             <KeyPosition
-                    app:framePosition="50"
-                    app:motionTarget="@id/moon"
-                    app:keyPositionType="parentRelative"
-                    app:percentY="0.5"
+                    motion:framePosition="50"
+                    motion:motionTarget="@id/moon"
+                    motion:keyPositionType="parentRelative"
+                    motion:percentY="0.5"
             />
             <KeyPosition
-                    app:framePosition="75"
-                    app:motionTarget="@id/moon"
-                    app:keyPositionType="parentRelative"
-                    app:percentY="0.6"
+                    motion:framePosition="75"
+                    motion:motionTarget="@id/moon"
+                    motion:keyPositionType="parentRelative"
+                    motion:percentY="0.6"
             />
             <KeyAttribute
-                    app:framePosition="50"
-                    app:motionTarget="@id/moon"
+                    motion:framePosition="50"
+                    motion:motionTarget="@id/moon"
                     android:scaleY="2.0"
                     android:scaleX="2.0"
                     android:rotation="-360"
             />
             <KeyAttribute
-                    app:framePosition="100"
-                    app:motionTarget="@id/moon"
+                    motion:framePosition="100"
+                    motion:motionTarget="@id/moon"
                     android:rotation="-720"
             />
             <KeyAttribute
-                    app:framePosition="0"
-                    app:motionTarget="@id/moon">
+                    motion:framePosition="0"
+                    motion:motionTarget="@id/moon">
                 <CustomAttribute
-                        app:attributeName="colorFilter"
-                        app:customColorValue="#FFFFFF"
+                        motion:attributeName="colorFilter"
+                        motion:customColorValue="#FFFFFF"
                 />
             </KeyAttribute>
             <KeyAttribute
-                    app:framePosition="50"
-                    app:motionTarget="@id/moon">
+                    motion:framePosition="50"
+                    motion:motionTarget="@id/moon">
                 <CustomAttribute
-                    app:attributeName="colorFilter"
-                    app:customColorValue="#FFB612"
+                    motion:attributeName="colorFilter"
+                    motion:customColorValue="#FFB612"
                 />
             </KeyAttribute>
             <KeyAttribute
-                    app:framePosition="100"
-                    app:motionTarget="@id/moon">
+                    motion:framePosition="100"
+                    motion:motionTarget="@id/moon">
                 <CustomAttribute
-                        app:attributeName="colorFilter"
-                        app:customColorValue="#FFFFFF"
+                        motion:attributeName="colorFilter"
+                        motion:customColorValue="#FFFFFF"
                 />
             </KeyAttribute>
             <KeyAttribute
-                    app:framePosition="85"
-                    app:motionTarget="@id/credits"
+                    motion:framePosition="85"
+                    motion:motionTarget="@id/credits"
                     android:alpha="0.0"
             />
         </KeyFrameSet>
@@ -101,8 +101,8 @@
             
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
         />
         <Constraint
             android:id="@id/credits"
@@ -110,9 +110,9 @@
             android:layout_height="wrap_content"
             android:alpha="0.0"
             android:layout_marginStart="16dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="@id/moon"
-            app:layout_constraintTop_toTopOf="@id/moon"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="@id/moon"
+            motion:layout_constraintTop_toTopOf="@id/moon"
             />
     </ConstraintSet>
 
@@ -122,8 +122,8 @@
             android:id="@id/moon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
         />
         <Constraint
                 android:id="@id/credits"
@@ -131,9 +131,9 @@
                 android:layout_height="wrap_content"
                 android:alpha="1.0"
                 android:layout_marginStart="16dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="@id/moon"
-                app:layout_constraintTop_toTopOf="@id/moon"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintBottom_toBottomOf="@id/moon"
+                motion:layout_constraintTop_toTopOf="@id/moon"
         />
     </ConstraintSet>
 </MotionScene>

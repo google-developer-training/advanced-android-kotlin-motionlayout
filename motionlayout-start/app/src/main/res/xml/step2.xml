@@ -15,12 +15,12 @@
   -->
 
 <!-- Describe the animation for activity_step2.xml -->
-<MotionScene xmlns:app="http://schemas.android.com/apk/res-auto"
+<MotionScene xmlns:motion="http://schemas.android.com/apk/res-auto"
              xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- A transition describes an animation via start and end state -->
     <Transition
-            app:constraintSetStart="@+id/start"
-            app:constraintSetEnd="@+id/end">
+            motion:constraintSetStart="@+id/start"
+            motion:constraintSetEnd="@+id/end">
         <!-- TODO add OnSwipe tag -->
     </Transition>
 

@@ -15,17 +15,17 @@
   -->
 
 <!-- Describe the animation for activity_step1.xml -->
-<MotionScene xmlns:app="http://schemas.android.com/apk/res-auto"
+<MotionScene xmlns:motion="http://schemas.android.com/apk/res-auto"
              xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- A transition describes an animation via start and end state -->
     <Transition
-            app:constraintSetStart="@+id/start"
-            app:constraintSetEnd="@+id/end"
-            app:duration="2000">
+            motion:constraintSetStart="@+id/start"
+            motion:constraintSetEnd="@+id/end"
+            motion:duration="2000">
         <!-- MotionLayout will handle clicks on @id/star to "toggle" the animation between the start and end -->
         <OnClick
-                app:targetId="@id/red_star"
-                app:clickAction="toggle" />
+                motion:targetId="@id/red_star"
+                motion:clickAction="toggle" />
     </Transition>
 
     <!-- Constraints to apply at the start of the animation -->
@@ -34,8 +34,8 @@
                 android:id="@+id/red_star"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toTopOf="parent" />
     </ConstraintSet>
 
     <!-- Constraints to apply at the end of the animation -->
@@ -44,7 +44,7 @@
                 android:id="@+id/red_star"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintBottom_toBottomOf="parent" />
     </ConstraintSet>
 </MotionScene>
